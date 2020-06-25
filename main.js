@@ -36,7 +36,8 @@ return false
 }
 
 secondCharOfThirdString = (char) => {
-
+  console.log(char)
+  return char[2][1]
 }
 
 
