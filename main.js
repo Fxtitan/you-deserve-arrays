@@ -22,16 +22,15 @@ isLongList = (arr) => {
     return true;
   } else if (arr.length < 10) {
     return false;
+    // or just return false...
   }
 }
 
 firstItemIsNumber = (arr) => {
   if (typeof arr[0] === 'number') {
     return true;
-  } if (typeof arr[0] === 'string' || typeof arr[0] === 'boolean') {
+  } if (typeof arr[0] === 'string' || typeof arr[0] === 'boolean' || typeof arr[0] === 'function' || typeof arr[0] === 'object') {
     return false;
-  } if (arr[0] === arr.isArray([1, 2, 3])) {
-return false
   }
 }
 
